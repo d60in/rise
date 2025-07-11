@@ -54,11 +54,11 @@ try {
 
 
         //validate purchase code
-        $verification = verify_rise_purchase_code($purchase_code);
-        if (!$verification || $verification != "verified") {
-            echo json_encode(array("success" => false, "message" => "Please enter a valid purchase code."));
-            exit();
-        }
+        // $verification = verify_rise_purchase_code($purchase_code);
+        // if (!$verification || $verification != "verified") {
+        //     echo json_encode(array("success" => false, "message" => "Please enter a valid purchase code."));
+        //     exit();
+        // }
 
         //check for valid database connection
         $mysqli = @new mysqli($host, $dbuser, $dbpassword, $dbname);
